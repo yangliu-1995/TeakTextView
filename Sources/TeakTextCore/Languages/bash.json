@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "bash",
+  "displayName": "Bash",
+  "fileExtensions": [
+    "sh",
+    "bash",
+    "zsh"
+  ],
+  "keywords": {
+    "keyword": [
+      "if",
+      "then",
+      "else",
+      "elif",
+      "fi",
+      "case",
+      "esac",
+      "for",
+      "select",
+      "while",
+      "until",
+      "do",
+      "done",
+      "in",
+      "function",
+      "time",
+      "coproc",
+      "break",
+      "continue",
+      "return",
+      "local",
+      "declare",
+      "typeset",
+      "export",
+      "readonly",
+      "unset",
+      "shift",
+      "source",
+      "alias",
+      "unalias",
+      "trap",
+      "set",
+      "shopt",
+      "eval",
+      "exec",
+      "exit",
+      "read",
+      "printf",
+      "echo",
+      "cd",
+      "pwd",
+      "test",
+      "true",
+      "false"
+    ]
+  },
+  "lineComments": [
+    "#"
+  ],
+  "blockComments": [],
+  "strings": [
+    {
+      "start": "\"",
+      "end": "\"",
+      "multiline": true,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "'",
+      "end": "'",
+      "multiline": true,
+      "scope": "string"
+    },
+    {
+      "start": "`",
+      "end": "`",
+      "multiline": true,
+      "scope": "string",
+      "escape": "\\"
+    }
+  ],
+  "highlightsNumbers": true,
+  "fileNames": [
+    ".bashrc",
+    ".bash_profile",
+    ".profile",
+    ".zshrc"
+  ],
+  "identifierRules": [
+    {
+      "startsWith": [
+        "$"
+      ],
+      "scope": "variable"
+    }
+  ]
+}

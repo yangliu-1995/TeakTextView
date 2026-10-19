@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "java",
+  "displayName": "Java",
+  "fileExtensions": [
+    "java"
+  ],
+  "keywords": {
+    "keyword": [
+      "abstract",
+      "assert",
+      "break",
+      "case",
+      "catch",
+      "class",
+      "const",
+      "continue",
+      "default",
+      "do",
+      "else",
+      "enum",
+      "extends",
+      "final",
+      "finally",
+      "for",
+      "goto",
+      "if",
+      "implements",
+      "import",
+      "instanceof",
+      "interface",
+      "native",
+      "new",
+      "package",
+      "private",
+      "protected",
+      "public",
+      "return",
+      "static",
+      "strictfp",
+      "super",
+      "switch",
+      "synchronized",
+      "this",
+      "throw",
+      "throws",
+      "transient",
+      "try",
+      "void",
+      "volatile",
+      "while",
+      "record",
+      "sealed",
+      "permits",
+      "var",
+      "yield"
+    ],
+    "type": [
+      "boolean",
+      "byte",
+      "char",
+      "double",
+      "float",
+      "int",
+      "long",
+      "short",
+      "String",
+      "Object",
+      "Class",
+      "System",
+      "List",
+      "Map",
+      "Set",
+      "Optional"
+    ],
+    "literal": [
+      "true",
+      "false",
+      "null"
+    ]
+  },
+  "lineComments": [
+    "//"
+  ],
+  "blockComments": [
+    {
+      "start": "/*",
+      "end": "*/",
+      "multiline": true,
+      "scope": "comment"
+    }
+  ],
+  "strings": [
+    {
+      "start": "\"\"\"",
+      "end": "\"\"\"",
+      "multiline": true,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "\"",
+      "end": "\"",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "'",
+      "end": "'",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\",
+      "characterLiteral": true
+    }
+  ],
+  "highlightsNumbers": true
+}

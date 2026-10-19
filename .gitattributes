@@ -1,0 +1,3 @@
+# Preserve upstream sample bytes and keep them out of repository language statistics.
+Demo/Samples/** -text linguist-vendored
+Tests/TeakTextCoreTests/Fixtures/** -text linguist-vendored

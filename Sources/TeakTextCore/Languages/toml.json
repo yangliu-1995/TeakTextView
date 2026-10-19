@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "toml",
+  "displayName": "TOML",
+  "fileExtensions": [
+    "toml"
+  ],
+  "keywords": {
+    "literal": [
+      "true",
+      "false",
+      "inf",
+      "nan"
+    ]
+  },
+  "lineComments": [
+    "#"
+  ],
+  "blockComments": [],
+  "strings": [
+    {
+      "start": "\"\"\"",
+      "end": "\"\"\"",
+      "multiline": true,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "'''",
+      "end": "'''",
+      "multiline": true,
+      "scope": "string"
+    },
+    {
+      "start": "\"",
+      "end": "\"",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "'",
+      "end": "'",
+      "multiline": false,
+      "scope": "string"
+    }
+  ],
+  "highlightsNumbers": true,
+  "identifierCharacters": "-",
+  "identifierRules": [
+    {
+      "followedBy": [
+        "="
+      ],
+      "scope": "property"
+    }
+  ],
+  "linePrefixes": [
+    {
+      "start": "[",
+      "scope": "section"
+    }
+  ],
+  "fileNames": [
+    "Cargo.lock",
+    "poetry.lock",
+    "Pipfile"
+  ]
+}

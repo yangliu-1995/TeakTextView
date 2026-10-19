@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "python",
+  "displayName": "Python",
+  "fileExtensions": [
+    "py",
+    "pyw",
+    "pyi"
+  ],
+  "keywords": {
+    "keyword": [
+      "and",
+      "as",
+      "assert",
+      "async",
+      "await",
+      "break",
+      "class",
+      "continue",
+      "def",
+      "del",
+      "elif",
+      "else",
+      "except",
+      "finally",
+      "for",
+      "from",
+      "global",
+      "if",
+      "import",
+      "in",
+      "is",
+      "lambda",
+      "nonlocal",
+      "not",
+      "or",
+      "pass",
+      "raise",
+      "return",
+      "try",
+      "while",
+      "with",
+      "yield",
+      "match",
+      "case"
+    ],
+    "type": [
+      "bool",
+      "bytes",
+      "dict",
+      "float",
+      "frozenset",
+      "int",
+      "list",
+      "object",
+      "set",
+      "str",
+      "tuple",
+      "type",
+      "print",
+      "range",
+      "len",
+      "super",
+      "self",
+      "cls"
+    ],
+    "literal": [
+      "True",
+      "False",
+      "None"
+    ]
+  },
+  "lineComments": [
+    "#"
+  ],
+  "blockComments": [],
+  "strings": [
+    {
+      "start": "\"\"\"",
+      "end": "\"\"\"",
+      "multiline": true,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "'''",
+      "end": "'''",
+      "multiline": true,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "\"",
+      "end": "\"",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "'",
+      "end": "'",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\"
+    }
+  ],
+  "highlightsNumbers": true
+}

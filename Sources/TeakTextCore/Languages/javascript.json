@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "javascript",
+  "displayName": "JavaScript",
+  "fileExtensions": ["js", "mjs", "cjs", "user.js", "jsx"],
+  "keywords": {
+    "keyword": ["async", "await", "break", "case", "catch", "class", "const", "continue", "debugger", "default", "delete", "do", "else", "export", "extends", "finally", "for", "from", "function", "get", "if", "import", "in", "instanceof", "let", "new", "of", "return", "set", "static", "super", "switch", "this", "throw", "try", "typeof", "var", "void", "while", "with", "yield"],
+    "literal": ["true", "false", "null", "undefined", "NaN", "Infinity"],
+    "type": ["Array", "Boolean", "Date", "Error", "JSON", "Map", "Math", "Number", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "console", "document", "window"]
+  },
+  "lineComments": ["//", "#!"],
+  "blockComments": [{"start": "/*", "end": "*/", "multiline": true, "scope": "comment"}],
+  "strings": [
+    {"start": "\"", "end": "\"", "escape": "\\", "multiline": false, "scope": "string"},
+    {"start": "'", "end": "'", "escape": "\\", "multiline": false, "scope": "string"},
+    {"start": "`", "end": "`", "escape": "\\", "multiline": true, "scope": "string"}
+  ],
+  "highlightsNumbers": true
+}

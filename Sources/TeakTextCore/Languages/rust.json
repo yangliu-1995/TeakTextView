@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "rust",
+  "displayName": "Rust",
+  "fileExtensions": [
+    "rs"
+  ],
+  "keywords": {
+    "keyword": [
+      "as",
+      "async",
+      "await",
+      "break",
+      "const",
+      "continue",
+      "crate",
+      "dyn",
+      "else",
+      "enum",
+      "extern",
+      "fn",
+      "for",
+      "if",
+      "impl",
+      "in",
+      "let",
+      "loop",
+      "macro",
+      "match",
+      "mod",
+      "move",
+      "mut",
+      "pub",
+      "ref",
+      "return",
+      "self",
+      "Self",
+      "static",
+      "struct",
+      "super",
+      "trait",
+      "type",
+      "union",
+      "unsafe",
+      "use",
+      "where",
+      "while",
+      "abstract",
+      "become",
+      "box",
+      "do",
+      "final",
+      "macro_rules",
+      "override",
+      "priv",
+      "try",
+      "typeof",
+      "unsized",
+      "virtual",
+      "yield"
+    ],
+    "type": [
+      "bool",
+      "char",
+      "str",
+      "usize",
+      "isize",
+      "u8",
+      "u16",
+      "u32",
+      "u64",
+      "u128",
+      "i8",
+      "i16",
+      "i32",
+      "i64",
+      "i128",
+      "f32",
+      "f64",
+      "String",
+      "Vec",
+      "Option",
+      "Result",
+      "Box",
+      "Some",
+      "None",
+      "Ok",
+      "Err"
+    ],
+    "literal": [
+      "true",
+      "false"
+    ]
+  },
+  "lineComments": [
+    "//"
+  ],
+  "blockComments": [
+    {
+      "start": "/*",
+      "end": "*/",
+      "multiline": true,
+      "scope": "comment",
+      "nested": true
+    }
+  ],
+  "strings": [
+    {
+      "start": "r\"",
+      "end": "\"",
+      "multiline": true,
+      "scope": "string"
+    },
+    {
+      "start": "r#\"",
+      "end": "\"#",
+      "multiline": true,
+      "scope": "string"
+    },
+    {
+      "start": "r##\"",
+      "end": "\"##",
+      "multiline": true,
+      "scope": "string"
+    },
+    {
+      "start": "r###\"",
+      "end": "\"###",
+      "multiline": true,
+      "scope": "string"
+    },
+    {
+      "start": "\"",
+      "end": "\"",
+      "multiline": true,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "'",
+      "end": "'",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\",
+      "characterLiteral": true
+    }
+  ],
+  "highlightsNumbers": true
+}

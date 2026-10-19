@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "css",
+  "displayName": "CSS",
+  "fileExtensions": [
+    "css"
+  ],
+  "keywords": {
+    "keyword": [
+      "important",
+      "inherit",
+      "initial",
+      "unset",
+      "revert",
+      "auto",
+      "none",
+      "block",
+      "inline",
+      "flex",
+      "grid",
+      "absolute",
+      "relative",
+      "fixed",
+      "sticky",
+      "solid",
+      "transparent",
+      "currentColor"
+    ]
+  },
+  "lineComments": [],
+  "blockComments": [
+    {
+      "start": "/*",
+      "end": "*/",
+      "multiline": true,
+      "scope": "comment"
+    }
+  ],
+  "strings": [
+    {
+      "start": "\"",
+      "end": "\"",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "'",
+      "end": "'",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\"
+    }
+  ],
+  "highlightsNumbers": true,
+  "identifierCharacters": "-",
+  "identifierRules": [
+    {
+      "precededBy": [
+        ".",
+        "#",
+        "@"
+      ],
+      "scope": "selector"
+    },
+    {
+      "followedBy": [
+        ":"
+      ],
+      "scope": "property"
+    }
+  ]
+}

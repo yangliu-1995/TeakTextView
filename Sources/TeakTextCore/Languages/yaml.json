@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "yaml",
+  "displayName": "YAML",
+  "fileExtensions": [
+    "yaml",
+    "yml"
+  ],
+  "keywords": {
+    "literal": [
+      "true",
+      "false",
+      "null",
+      "True",
+      "False",
+      "Null",
+      "TRUE",
+      "FALSE",
+      "NULL",
+      "yes",
+      "no",
+      "Yes",
+      "No",
+      "on",
+      "off",
+      "On",
+      "Off"
+    ]
+  },
+  "lineComments": [
+    "#"
+  ],
+  "blockComments": [],
+  "strings": [
+    {
+      "start": "\"",
+      "end": "\"",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "'",
+      "end": "'",
+      "multiline": false,
+      "scope": "string"
+    }
+  ],
+  "highlightsNumbers": true,
+  "identifierCharacters": "-",
+  "identifierRules": [
+    {
+      "followedBy": [
+        ":"
+      ],
+      "scope": "property"
+    }
+  ]
+}

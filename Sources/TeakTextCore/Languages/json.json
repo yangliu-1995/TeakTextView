@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "json",
+  "displayName": "JSON",
+  "fileExtensions": [
+    "json",
+    "jsonl",
+    "ipynb"
+  ],
+  "keywords": {
+    "literal": [
+      "true",
+      "false",
+      "null"
+    ]
+  },
+  "lineComments": [],
+  "blockComments": [],
+  "strings": [
+    {
+      "start": "\"",
+      "end": "\"",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\"
+    }
+  ],
+  "highlightsNumbers": true
+}

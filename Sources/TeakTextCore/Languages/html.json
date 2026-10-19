@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "html",
+  "displayName": "HTML",
+  "fileExtensions": [
+    "html",
+    "htm",
+    "xhtml"
+  ],
+  "keywords": {},
+  "lineComments": [],
+  "blockComments": [
+    {
+      "start": "<!--",
+      "end": "-->",
+      "multiline": true,
+      "scope": "comment"
+    }
+  ],
+  "strings": [
+    {
+      "start": "\"",
+      "end": "\"",
+      "multiline": false,
+      "scope": "string"
+    },
+    {
+      "start": "'",
+      "end": "'",
+      "multiline": false,
+      "scope": "string"
+    }
+  ],
+  "highlightsNumbers": false,
+  "identifierCharacters": "-:",
+  "identifierRules": [
+    {
+      "precededBy": [
+        "<",
+        "</"
+      ],
+      "scope": "tag"
+    },
+    {
+      "followedBy": [
+        "="
+      ],
+      "scope": "attribute"
+    }
+  ]
+}

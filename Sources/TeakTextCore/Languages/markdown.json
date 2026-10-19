@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "markdown",
+  "displayName": "Markdown",
+  "fileExtensions": [
+    "md",
+    "markdown",
+    "mdown",
+    "mkd"
+  ],
+  "keywords": {},
+  "lineComments": [],
+  "blockComments": [
+    {
+      "start": "<!--",
+      "end": "-->",
+      "multiline": true,
+      "scope": "comment"
+    }
+  ],
+  "strings": [
+    {
+      "start": "```",
+      "end": "```",
+      "multiline": true,
+      "scope": "code"
+    },
+    {
+      "start": "~~~",
+      "end": "~~~",
+      "multiline": true,
+      "scope": "code"
+    },
+    {
+      "start": "`",
+      "end": "`",
+      "multiline": false,
+      "scope": "code"
+    },
+    {
+      "start": "**",
+      "end": "**",
+      "multiline": false,
+      "scope": "emphasis",
+      "escape": "\\"
+    },
+    {
+      "start": "__",
+      "end": "__",
+      "multiline": false,
+      "scope": "emphasis",
+      "escape": "\\"
+    },
+    {
+      "start": "*",
+      "end": "*",
+      "multiline": false,
+      "scope": "emphasis",
+      "escape": "\\"
+    },
+    {
+      "start": "_",
+      "end": "_",
+      "multiline": false,
+      "scope": "emphasis",
+      "escape": "\\"
+    }
+  ],
+  "highlightsNumbers": false,
+  "linePrefixes": [
+    {
+      "start": "# ",
+      "scope": "heading"
+    },
+    {
+      "start": "## ",
+      "scope": "heading"
+    },
+    {
+      "start": "### ",
+      "scope": "heading"
+    },
+    {
+      "start": "#### ",
+      "scope": "heading"
+    },
+    {
+      "start": "##### ",
+      "scope": "heading"
+    },
+    {
+      "start": "###### ",
+      "scope": "heading"
+    },
+    {
+      "start": "> ",
+      "scope": "comment"
+    }
+  ]
+}

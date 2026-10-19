@@ -1,0 +1,448 @@
+[
+  {
+    "languageID": "javascript",
+    "displayName": "JavaScript",
+    "normal": {
+      "resourcePath": "javascript/normal/core.js",
+      "fileName": "core.js",
+      "byteCount": 10181,
+      "sourceURL": "https://github.com/jquery/jquery/blob/f79d5f1a337528940ab7029d4f8bbba72326f269/src/core.js",
+      "commitSHA": "f79d5f1a337528940ab7029d4f8bbba72326f269",
+      "sha256": "0bc34bc70e6f9405e8bf81996f29cfaf1e19e1fd7fb855d83b8217a596549292"
+    },
+    "large": {
+      "resourcePath": "javascript/large/jquery.js",
+      "fileName": "jquery.js",
+      "byteCount": 285314,
+      "sourceURL": "https://github.com/jquery/jquery/blob/f79d5f1a337528940ab7029d4f8bbba72326f269/dist/jquery.js",
+      "commitSHA": "f79d5f1a337528940ab7029d4f8bbba72326f269",
+      "sha256": "78a85aca2f0b110c29e0d2b137e09f0a1fb7a8e554b499f740d6744dc8962cfe"
+    },
+    "licensePaths": [
+      "Licenses/jquery_jquery/LICENSE.txt"
+    ]
+  },
+  {
+    "languageID": "typescript",
+    "displayName": "TypeScript",
+    "normal": {
+      "resourcePath": "typescript/normal/performance.ts",
+      "fileName": "performance.ts",
+      "byteCount": 6146,
+      "sourceURL": "https://github.com/microsoft/TypeScript/blob/c63de15a992d37f0d6cec03ac7631872838602cb/src/compiler/performance.ts",
+      "commitSHA": "c63de15a992d37f0d6cec03ac7631872838602cb",
+      "sha256": "b12e3cdedb651fe1d94fceae1bb236c2745530ba7fe0c9dc996d61ba22b6c473"
+    },
+    "large": {
+      "resourcePath": "typescript/large/checker.ts",
+      "fileName": "checker.ts",
+      "byteCount": 3121747,
+      "sourceURL": "https://github.com/microsoft/TypeScript/blob/c63de15a992d37f0d6cec03ac7631872838602cb/src/compiler/checker.ts",
+      "commitSHA": "c63de15a992d37f0d6cec03ac7631872838602cb",
+      "sha256": "aba154f42352498790b55fa6995bdbb5dee607460eef5eebc1908b0cf0087d3c"
+    },
+    "licensePaths": [
+      "Licenses/microsoft_TypeScript/LICENSE.txt",
+      "Licenses/microsoft_TypeScript/ThirdPartyNoticeText.txt"
+    ]
+  },
+  {
+    "languageID": "python",
+    "displayName": "Python",
+    "normal": {
+      "resourcePath": "python/normal/colorsys.py",
+      "fileName": "colorsys.py",
+      "byteCount": 4062,
+      "sourceURL": "https://github.com/python/cpython/blob/999855b07f9b795ca88ac3349060a06c116a1037/Lib/colorsys.py",
+      "commitSHA": "999855b07f9b795ca88ac3349060a06c116a1037",
+      "sha256": "65e3dfbf7bad61d4d7d7731a69dd7e75a347fd350d91327a51010a94e6fd2f1d"
+    },
+    "large": {
+      "resourcePath": "python/large/typing.py",
+      "fileName": "typing.py",
+      "byteCount": 139318,
+      "sourceURL": "https://github.com/python/cpython/blob/999855b07f9b795ca88ac3349060a06c116a1037/Lib/typing.py",
+      "commitSHA": "999855b07f9b795ca88ac3349060a06c116a1037",
+      "sha256": "b7b9d7ca89c9ec582c3e8f49be44d99a487971770c8f9f872e8a234062937964"
+    },
+    "licensePaths": [
+      "Licenses/python_cpython/LICENSE"
+    ]
+  },
+  {
+    "languageID": "html",
+    "displayName": "HTML",
+    "normal": {
+      "resourcePath": "html/normal/index.html",
+      "fileName": "index.html",
+      "byteCount": 5568,
+      "sourceURL": "https://github.com/twbs/bootstrap/blob/6e1f75f420f68e1d52733b8e407fc7c3766c9dba/site/content/docs/5.3/examples/starter-template/index.html",
+      "commitSHA": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
+      "sha256": "fd6a675853cdf2f53194322c3a0ea02897dedb53b9c7c0117f2f31fe164c571c"
+    },
+    "large": {
+      "resourcePath": "html/large/index.html",
+      "fileName": "index.html",
+      "byteCount": 80506,
+      "sourceURL": "https://github.com/twbs/bootstrap/blob/6e1f75f420f68e1d52733b8e407fc7c3766c9dba/site/content/docs/5.3/examples/cheatsheet/index.html",
+      "commitSHA": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
+      "sha256": "c8c1264e9c29f708df2dec01d356cc09f92911e635c5b53dccd2b486cf186831"
+    },
+    "licensePaths": [
+      "Licenses/twbs_bootstrap/LICENSE"
+    ]
+  },
+  {
+    "languageID": "css",
+    "displayName": "CSS",
+    "normal": {
+      "resourcePath": "css/normal/bootstrap-reboot.css",
+      "fileName": "bootstrap-reboot.css",
+      "byteCount": 12065,
+      "sourceURL": "https://github.com/twbs/bootstrap/blob/6e1f75f420f68e1d52733b8e407fc7c3766c9dba/dist/css/bootstrap-reboot.css",
+      "commitSHA": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
+      "sha256": "968f5823cd8e174defa2376ef97391dfe0d1acb229321a7364d9876cce420cc0"
+    },
+    "large": {
+      "resourcePath": "css/large/bootstrap.css",
+      "fileName": "bootstrap.css",
+      "byteCount": 281046,
+      "sourceURL": "https://github.com/twbs/bootstrap/blob/6e1f75f420f68e1d52733b8e407fc7c3766c9dba/dist/css/bootstrap.css",
+      "commitSHA": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
+      "sha256": "18a105d7cb38e01e5ed0ca255c092992a2e211b39594a7fa57262bfc6fc4ea9c"
+    },
+    "licensePaths": [
+      "Licenses/twbs_bootstrap/LICENSE"
+    ]
+  },
+  {
+    "languageID": "markdown",
+    "displayName": "Markdown",
+    "normal": {
+      "resourcePath": "markdown/normal/CONTRIBUTING.md",
+      "fileName": "CONTRIBUTING.md",
+      "byteCount": 3114,
+      "sourceURL": "https://github.com/rust-lang/rust/blob/b6eeb93c992027a03e1fd120b6652546396b142c/CONTRIBUTING.md",
+      "commitSHA": "b6eeb93c992027a03e1fd120b6652546396b142c",
+      "sha256": "814cdb2341ab5f49a0033bc850b8458fab2ba84636f1b33e89d3bcaa5435880f"
+    },
+    "large": {
+      "resourcePath": "markdown/large/RELEASES.md",
+      "fileName": "RELEASES.md",
+      "byteCount": 931116,
+      "sourceURL": "https://github.com/rust-lang/rust/blob/b6eeb93c992027a03e1fd120b6652546396b142c/RELEASES.md",
+      "commitSHA": "b6eeb93c992027a03e1fd120b6652546396b142c",
+      "sha256": "0311ba85c08f659f13bb22aff0dc3837c6c291008529ebd9e5efc9c75b5f321f"
+    },
+    "licensePaths": [
+      "Licenses/rust-lang_rust/LICENSE-MIT",
+      "Licenses/rust-lang_rust/LICENSE-APACHE",
+      "Licenses/rust-lang_rust/COPYRIGHT"
+    ]
+  },
+  {
+    "languageID": "java",
+    "displayName": "Java",
+    "normal": {
+      "resourcePath": "java/normal/Verify.java",
+      "fileName": "Verify.java",
+      "byteCount": 18978,
+      "sourceURL": "https://github.com/google/guava/blob/669a232b4e20ae6e8bc6efc62caaf2f830d56327/guava/src/com/google/common/base/Verify.java",
+      "commitSHA": "669a232b4e20ae6e8bc6efc62caaf2f830d56327",
+      "sha256": "d6c49dff550164a6f705fb14ac37b244bce940e88cb10f64cf9b069bdaf365a6"
+    },
+    "large": {
+      "resourcePath": "java/large/Maps.java",
+      "fileName": "Maps.java",
+      "byteCount": 169271,
+      "sourceURL": "https://github.com/google/guava/blob/669a232b4e20ae6e8bc6efc62caaf2f830d56327/guava/src/com/google/common/collect/Maps.java",
+      "commitSHA": "669a232b4e20ae6e8bc6efc62caaf2f830d56327",
+      "sha256": "6cac45652c3487f0d8ce1ef672377988bb5cedf0bb973e77f9d8720bf349379c"
+    },
+    "licensePaths": [
+      "Licenses/google_guava/LICENSE"
+    ]
+  },
+  {
+    "languageID": "csharp",
+    "displayName": "C#",
+    "normal": {
+      "resourcePath": "csharp/normal/Boolean.cs",
+      "fileName": "Boolean.cs",
+      "byteCount": 13188,
+      "sourceURL": "https://github.com/dotnet/runtime/blob/17730e81e9851093834200eb2e6e31d5fbb3d438/src/libraries/System.Private.CoreLib/src/System/Boolean.cs",
+      "commitSHA": "17730e81e9851093834200eb2e6e31d5fbb3d438",
+      "sha256": "6627f1248d263765e351ac4c4306a61e85fa0ba2acd6eafc8742a24d45e39482"
+    },
+    "large": {
+      "resourcePath": "csharp/large/Number.Formatting.cs",
+      "fileName": "Number.Formatting.cs",
+      "byteCount": 118681,
+      "sourceURL": "https://github.com/dotnet/runtime/blob/17730e81e9851093834200eb2e6e31d5fbb3d438/src/libraries/System.Private.CoreLib/src/System/Number.Formatting.cs",
+      "commitSHA": "17730e81e9851093834200eb2e6e31d5fbb3d438",
+      "sha256": "cf644cfc1857518cefc111ca5df0efc188c99f5ee476ea5dfd53e084367454f2"
+    },
+    "licensePaths": [
+      "Licenses/dotnet_runtime/LICENSE.TXT",
+      "Licenses/dotnet_runtime/THIRD-PARTY-NOTICES.TXT"
+    ]
+  },
+  {
+    "languageID": "c",
+    "displayName": "C",
+    "normal": {
+      "resourcePath": "c/normal/strcase.c",
+      "fileName": "strcase.c",
+      "byteCount": 5424,
+      "sourceURL": "https://github.com/curl/curl/blob/9ef1a3a130450d603abd029772422abd40cfcde0/lib/strcase.c",
+      "commitSHA": "9ef1a3a130450d603abd029772422abd40cfcde0",
+      "sha256": "020af11b675a782b09de8343debc10bead83f72dca99282a1e417e3101b8681e"
+    },
+    "large": {
+      "resourcePath": "c/large/url.c",
+      "fileName": "url.c",
+      "byteCount": 84191,
+      "sourceURL": "https://github.com/curl/curl/blob/9ef1a3a130450d603abd029772422abd40cfcde0/lib/url.c",
+      "commitSHA": "9ef1a3a130450d603abd029772422abd40cfcde0",
+      "sha256": "009e1ea54d5911c5b21ae587716d76f1c731e04d1d2db69bf1de9a37c76bdb36"
+    },
+    "licensePaths": [
+      "Licenses/curl_curl/COPYING"
+    ]
+  },
+  {
+    "languageID": "cpp",
+    "displayName": "C++",
+    "normal": {
+      "resourcePath": "cpp/normal/os.cc",
+      "fileName": "os.cc",
+      "byteCount": 11407,
+      "sourceURL": "https://github.com/fmtlib/fmt/blob/0fc31633e7d53ac895ae0a688b83b7d44f0b0c1f/src/os.cc",
+      "commitSHA": "0fc31633e7d53ac895ae0a688b83b7d44f0b0c1f",
+      "sha256": "16906d8fa90bc17952a091d4d696232a431c79f3be8b707b1972e997853fae5b"
+    },
+    "large": {
+      "resourcePath": "cpp/large/format.h",
+      "fileName": "format.h",
+      "byteCount": 172738,
+      "sourceURL": "https://github.com/fmtlib/fmt/blob/0fc31633e7d53ac895ae0a688b83b7d44f0b0c1f/include/fmt/format.h",
+      "commitSHA": "0fc31633e7d53ac895ae0a688b83b7d44f0b0c1f",
+      "sha256": "0930b1f9f8bd6990c741e7b15435b10d8cf57d0de8271d0db5de19785682e39f"
+    },
+    "licensePaths": [
+      "Licenses/fmtlib_fmt/LICENSE"
+    ]
+  },
+  {
+    "languageID": "go",
+    "displayName": "Go",
+    "normal": {
+      "resourcePath": "go/normal/reader.go",
+      "fileName": "reader.go",
+      "byteCount": 3940,
+      "sourceURL": "https://github.com/golang/go/blob/dfc6f7db9bd75868ffb5cbc9501a2f4899122d2f/src/strings/reader.go",
+      "commitSHA": "dfc6f7db9bd75868ffb5cbc9501a2f4899122d2f",
+      "sha256": "cceec92b1c65a8b3b2b5fc2991ea0a54b1bf6c5fb75981de5fa91c7b2dadbb6d"
+    },
+    "large": {
+      "resourcePath": "go/large/proc.go",
+      "fileName": "proc.go",
+      "byteCount": 244111,
+      "sourceURL": "https://github.com/golang/go/blob/dfc6f7db9bd75868ffb5cbc9501a2f4899122d2f/src/runtime/proc.go",
+      "commitSHA": "dfc6f7db9bd75868ffb5cbc9501a2f4899122d2f",
+      "sha256": "bff352cdaef88fd63c5ccb25ae18188d1999bedde65f38c6f68970499125e2b4"
+    },
+    "licensePaths": [
+      "Licenses/golang_go/LICENSE",
+      "Licenses/golang_go/PATENTS"
+    ]
+  },
+  {
+    "languageID": "rust",
+    "displayName": "Rust",
+    "normal": {
+      "resourcePath": "rust/normal/num.rs",
+      "fileName": "num.rs",
+      "byteCount": 35764,
+      "sourceURL": "https://github.com/rust-lang/rust/blob/b6eeb93c992027a03e1fd120b6652546396b142c/library/core/src/convert/num.rs",
+      "commitSHA": "b6eeb93c992027a03e1fd120b6652546396b142c",
+      "sha256": "8dbf6c64681e2dee556e0844eef3e53d62a40df0280d25f469352870a401e034"
+    },
+    "large": {
+      "resourcePath": "rust/large/mod.rs",
+      "fileName": "mod.rs",
+      "byteCount": 118480,
+      "sourceURL": "https://github.com/rust-lang/rust/blob/b6eeb93c992027a03e1fd120b6652546396b142c/library/core/src/str/mod.rs",
+      "commitSHA": "b6eeb93c992027a03e1fd120b6652546396b142c",
+      "sha256": "37b9707b62fb84c445cf5c6896c9c42c2a5b195b8823913fe2d0ff4422ec8530"
+    },
+    "licensePaths": [
+      "Licenses/rust-lang_rust/LICENSE-MIT",
+      "Licenses/rust-lang_rust/LICENSE-APACHE",
+      "Licenses/rust-lang_rust/COPYRIGHT"
+    ]
+  },
+  {
+    "languageID": "swift",
+    "displayName": "Swift",
+    "normal": {
+      "resourcePath": "swift/normal/Bool.swift",
+      "fileName": "Bool.swift",
+      "byteCount": 11762,
+      "sourceURL": "https://github.com/swiftlang/swift/blob/d06df163fb9e1030e218674378689ce7ad887e9c/stdlib/public/core/Bool.swift",
+      "commitSHA": "d06df163fb9e1030e218674378689ce7ad887e9c",
+      "sha256": "f7d8208b42cde72e98d0056f3b279e36be9039408dffe7880196bdb5c9e92cf3"
+    },
+    "large": {
+      "resourcePath": "swift/large/Array.swift",
+      "fileName": "Array.swift",
+      "byteCount": 88878,
+      "sourceURL": "https://github.com/swiftlang/swift/blob/d06df163fb9e1030e218674378689ce7ad887e9c/stdlib/public/core/Array.swift",
+      "commitSHA": "d06df163fb9e1030e218674378689ce7ad887e9c",
+      "sha256": "f78cf660752a55fa479a52d12c9acd09ab5edaa9749979de084ed3ffa276dbce"
+    },
+    "licensePaths": [
+      "Licenses/swiftlang_swift/LICENSE.txt"
+    ]
+  },
+  {
+    "languageID": "kotlin",
+    "displayName": "Kotlin",
+    "normal": {
+      "resourcePath": "kotlin/normal/Standard.kt",
+      "fileName": "Standard.kt",
+      "byteCount": 5371,
+      "sourceURL": "https://github.com/JetBrains/kotlin/blob/09ce683bca90c9ad7806ee0d10168e77ff096c11/libraries/stdlib/src/kotlin/util/Standard.kt",
+      "commitSHA": "09ce683bca90c9ad7806ee0d10168e77ff096c11",
+      "sha256": "bf8b3c6060528edc4637ca4a32498d468b4ccd44e3625f1f11589bee8d4803eb"
+    },
+    "large": {
+      "resourcePath": "kotlin/large/_Collections.kt",
+      "fileName": "_Collections.kt",
+      "byteCount": 143165,
+      "sourceURL": "https://github.com/JetBrains/kotlin/blob/09ce683bca90c9ad7806ee0d10168e77ff096c11/libraries/stdlib/common/src/generated/_Collections.kt",
+      "commitSHA": "09ce683bca90c9ad7806ee0d10168e77ff096c11",
+      "sha256": "ceef966fca1973a351e85c6bedc4a14d43386b26b25682fb6efaa2c9e79cc842"
+    },
+    "licensePaths": [
+      "Licenses/JetBrains_kotlin/license/LICENSE.txt",
+      "Licenses/JetBrains_kotlin/license/NOTICE.txt"
+    ]
+  },
+  {
+    "languageID": "sql",
+    "displayName": "SQL",
+    "normal": {
+      "resourcePath": "sql/normal/boolean.sql",
+      "fileName": "boolean.sql",
+      "byteCount": 5752,
+      "sourceURL": "https://github.com/postgres/postgres/blob/e355089a57d6f480cffc2820c46fcf0b5e371cf6/src/test/regress/sql/boolean.sql",
+      "commitSHA": "e355089a57d6f480cffc2820c46fcf0b5e371cf6",
+      "sha256": "d87b3e67963421c4a3867c6dbdda83ad209a412515a6a0e304b60b38aff59a9b"
+    },
+    "large": {
+      "resourcePath": "sql/large/create_index.sql",
+      "fileName": "create_index.sql",
+      "byteCount": 57666,
+      "sourceURL": "https://github.com/postgres/postgres/blob/e355089a57d6f480cffc2820c46fcf0b5e371cf6/src/test/regress/sql/create_index.sql",
+      "commitSHA": "e355089a57d6f480cffc2820c46fcf0b5e371cf6",
+      "sha256": "de78a0231bc7a27a30e3189f250108a9bb12eca358163c67af6a441650e6cc0e"
+    },
+    "licensePaths": [
+      "Licenses/postgres_postgres/COPYRIGHT"
+    ]
+  },
+  {
+    "languageID": "bash",
+    "displayName": "Bash",
+    "normal": {
+      "resourcePath": "bash/normal/install.sh",
+      "fileName": "install.sh",
+      "byteCount": 17987,
+      "sourceURL": "https://github.com/nvm-sh/nvm/blob/b1b3a0038c0666c7436cb5d383608b4b72c8300b/install.sh",
+      "commitSHA": "b1b3a0038c0666c7436cb5d383608b4b72c8300b",
+      "sha256": "097892f9a1c52afb171712e29dd394a464be572a8e4eee292aad25b97ae5eb03"
+    },
+    "large": {
+      "resourcePath": "bash/large/nvm.sh",
+      "fileName": "nvm.sh",
+      "byteCount": 187913,
+      "sourceURL": "https://github.com/nvm-sh/nvm/blob/b1b3a0038c0666c7436cb5d383608b4b72c8300b/nvm.sh",
+      "commitSHA": "b1b3a0038c0666c7436cb5d383608b4b72c8300b",
+      "sha256": "12aedd5fc6ecb22d6b43a091b3e7efc8c88526db83ac086f2d98e1ad825a7ede"
+    },
+    "licensePaths": [
+      "Licenses/nvm-sh_nvm/LICENSE.md"
+    ]
+  },
+  {
+    "languageID": "json",
+    "displayName": "JSON",
+    "normal": {
+      "resourcePath": "json/normal/package.json",
+      "fileName": "package.json",
+      "byteCount": 3561,
+      "sourceURL": "https://github.com/microsoft/TypeScript/blob/c63de15a992d37f0d6cec03ac7631872838602cb/package.json",
+      "commitSHA": "c63de15a992d37f0d6cec03ac7631872838602cb",
+      "sha256": "4532f4524fee211a60447f20f049bb5e4a8078d939edd4e194a3c4de006b1f07"
+    },
+    "large": {
+      "resourcePath": "json/large/package-lock.json",
+      "fileName": "package-lock.json",
+      "byteCount": 366720,
+      "sourceURL": "https://github.com/microsoft/TypeScript/blob/c63de15a992d37f0d6cec03ac7631872838602cb/package-lock.json",
+      "commitSHA": "c63de15a992d37f0d6cec03ac7631872838602cb",
+      "sha256": "472c30604eef217bec1b807a81590f07cd5cad765e57757948606c6b727a3642"
+    },
+    "licensePaths": [
+      "Licenses/microsoft_TypeScript/LICENSE.txt",
+      "Licenses/microsoft_TypeScript/ThirdPartyNoticeText.txt"
+    ]
+  },
+  {
+    "languageID": "yaml",
+    "displayName": "YAML",
+    "normal": {
+      "resourcePath": "yaml/normal/bigquery_v2.yaml",
+      "fileName": "bigquery_v2.yaml",
+      "byteCount": 8976,
+      "sourceURL": "https://github.com/googleapis/googleapis/blob/e7513c828b8db536fa12fc5493d541f323aedf90/google/cloud/bigquery/v2/bigquery_v2.yaml",
+      "commitSHA": "e7513c828b8db536fa12fc5493d541f323aedf90",
+      "sha256": "8fdbfb80b9256e93035c64b16d42aa37821fd67f54529fefa22494ab2f79d68f"
+    },
+    "large": {
+      "resourcePath": "yaml/large/aiplatform_v1.yaml",
+      "fileName": "aiplatform_v1.yaml",
+      "byteCount": 66574,
+      "sourceURL": "https://github.com/googleapis/googleapis/blob/e7513c828b8db536fa12fc5493d541f323aedf90/google/cloud/aiplatform/v1/aiplatform_v1.yaml",
+      "commitSHA": "e7513c828b8db536fa12fc5493d541f323aedf90",
+      "sha256": "46fc1c4173de079558395cff75481fa56c413f612cfc6bc17fd392872a49f651"
+    },
+    "licensePaths": [
+      "Licenses/googleapis_googleapis/LICENSE"
+    ]
+  },
+  {
+    "languageID": "toml",
+    "displayName": "TOML",
+    "normal": {
+      "resourcePath": "toml/normal/Cargo.toml",
+      "fileName": "Cargo.toml",
+      "byteCount": 3347,
+      "sourceURL": "https://github.com/astral-sh/ruff/blob/b5e92c5d5351235ad3043cf4928bc080d90bdb8c/crates/ruff/Cargo.toml",
+      "commitSHA": "b5e92c5d5351235ad3043cf4928bc080d90bdb8c",
+      "sha256": "4771741f2317c3f3eacd368be9e10068f731b3a1d84e05345d557e516b87902f"
+    },
+    "large": {
+      "resourcePath": "toml/large/Cargo.lock",
+      "fileName": "Cargo.lock",
+      "byteCount": 139009,
+      "sourceURL": "https://github.com/astral-sh/ruff/blob/b5e92c5d5351235ad3043cf4928bc080d90bdb8c/Cargo.lock",
+      "commitSHA": "b5e92c5d5351235ad3043cf4928bc080d90bdb8c",
+      "sha256": "a049c8963abf121b242ebab5481739a33c2cf1d2bbc04b085d60e2e6d52a0b13"
+    },
+    "licensePaths": [
+      "Licenses/astral-sh_ruff/LICENSE"
+    ]
+  }
+]

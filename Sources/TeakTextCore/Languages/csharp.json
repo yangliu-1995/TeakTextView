@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "csharp",
+  "displayName": "C#",
+  "fileExtensions": [
+    "cs",
+    "csx"
+  ],
+  "keywords": {
+    "keyword": [
+      "abstract",
+      "as",
+      "async",
+      "await",
+      "base",
+      "break",
+      "case",
+      "catch",
+      "checked",
+      "class",
+      "const",
+      "continue",
+      "default",
+      "delegate",
+      "do",
+      "else",
+      "enum",
+      "event",
+      "explicit",
+      "extern",
+      "finally",
+      "fixed",
+      "for",
+      "foreach",
+      "goto",
+      "if",
+      "implicit",
+      "in",
+      "interface",
+      "internal",
+      "is",
+      "lock",
+      "namespace",
+      "new",
+      "operator",
+      "out",
+      "override",
+      "params",
+      "private",
+      "protected",
+      "public",
+      "readonly",
+      "record",
+      "ref",
+      "required",
+      "return",
+      "scoped",
+      "sealed",
+      "sizeof",
+      "stackalloc",
+      "static",
+      "struct",
+      "switch",
+      "this",
+      "throw",
+      "try",
+      "typeof",
+      "unchecked",
+      "unsafe",
+      "using",
+      "virtual",
+      "volatile",
+      "when",
+      "while",
+      "with",
+      "yield",
+      "get",
+      "set",
+      "init",
+      "value",
+      "partial",
+      "where",
+      "var",
+      "global",
+      "file"
+    ],
+    "type": [
+      "bool",
+      "byte",
+      "char",
+      "decimal",
+      "double",
+      "dynamic",
+      "float",
+      "int",
+      "long",
+      "nint",
+      "nuint",
+      "object",
+      "sbyte",
+      "short",
+      "string",
+      "uint",
+      "ulong",
+      "ushort",
+      "void"
+    ],
+    "literal": [
+      "true",
+      "false",
+      "null"
+    ]
+  },
+  "lineComments": [
+    "//"
+  ],
+  "blockComments": [
+    {
+      "start": "/*",
+      "end": "*/",
+      "multiline": true,
+      "scope": "comment"
+    }
+  ],
+  "strings": [
+    {
+      "start": "\"\"\"",
+      "end": "\"\"\"",
+      "multiline": true,
+      "scope": "string"
+    },
+    {
+      "start": "@\"",
+      "end": "\"",
+      "multiline": true,
+      "scope": "string"
+    },
+    {
+      "start": "\"",
+      "end": "\"",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\"
+    },
+    {
+      "start": "'",
+      "end": "'",
+      "multiline": false,
+      "scope": "string",
+      "escape": "\\",
+      "characterLiteral": true
+    }
+  ],
+  "highlightsNumbers": true,
+  "linePrefixes": [
+    {
+      "start": "#",
+      "scope": "directive"
+    }
+  ]
+}
