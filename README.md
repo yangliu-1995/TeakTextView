@@ -1,48 +1,48 @@
 # TeakTextView
 
-**Teak 浏览器内置的代码编辑器与预览器。**
+[English](README.md) | [中文](README.zh-CN.md)
 
-The native code editor and previewer built into the Teak browser.
+**The native code editor and previewer built into the Teak browser.**
 
-TeakTextView 将 Teak 的原生文本编辑与源码预览能力独立为 Swift Package，基于 UIKit、TextKit 2 和 C++20 文档缓冲实现。支持可编辑及只读预览模式、原生文本选择与复制，并内置 19 种语言的基础语法高亮。预览展示文件源码，不执行代码。
+TeakTextView brings Teak's native text editing and source preview capabilities to a standalone Swift Package. Built with UIKit, TextKit 2, and a C++20 text buffer, it supports editable and read-only modes, native text selection and copying, and basic syntax highlighting for 19 languages. Previews display source text without executing it.
 
-## 功能
+## Features
 
-- 原生输入、中文输入法、选区手柄、复制/剪切/粘贴、撤销与重做。
-- 逻辑行号、自动折行，以及针对压缩代码长行的有界排版和分块绘制。
-- C++ 持久化 Rope 与不可变文档快照，编辑时共享未变化节点。
-- 后台文件读取、解码和保存，支持 UTF-8、带 BOM 的 UTF-16 LE/BE，保留编码、BOM 和换行。
-- 后台按视口高亮、过期结果检查，以及可导入的 JSON 语言规则。
-- 独立 Demo：语言列表、正常/大文件切换、文件导入与导出、只读模式及性能指标。
+- Native text input, Chinese IME composition, selection handles, copy/cut/paste, undo, and redo.
+- Logical line numbers, line wrapping, and bounded layout with tiled rendering for long lines in minified code.
+- A persistent C++ Rope and immutable document snapshots that share unchanged nodes across edits.
+- Background file reading, decoding, and saving with support for UTF-8 and BOM-marked UTF-16 LE/BE, preserving encoding, BOM, and line endings.
+- Background viewport-based highlighting, stale result checks, and importable JSON language rules.
+- A standalone demo with a language list, normal and large sample files, file import and export, read-only mode, and performance metrics.
 
-## 环境
+## Requirements
 
-| 用途 | 要求 |
+| Component | Requirements |
 | --- | --- |
-| 编辑器与 Demo | iOS 17+、Xcode 16+、Swift 6、C++20 |
-| 文档与高亮核心 | macOS 14+ 或 iOS 17+ |
+| Editor and demo | iOS 17+, Xcode 16+, Swift 6, C++20 |
+| Document and highlighting core | macOS 14+ or iOS 17+ |
 
-无第三方运行时依赖。编辑 UI 目前使用 UIKit；macOS 支持核心模块与测试。
+There are no third-party runtime dependencies. The editor UI currently uses UIKit; macOS supports the core modules and tests.
 
-## 安装
+## Installation
 
-在 Xcode 的 **File → Add Package Dependencies** 中添加：
+In Xcode, choose **File → Add Package Dependencies** and enter:
 
 ```
 https://github.com/yangliu-1995/TeakTextView.git
 ```
 
-当前可选择 `main` 分支。也可以在 `Package.swift` 中添加：
+Select the `main` branch. Alternatively, add the package to your `Package.swift`:
 
 ```swift
 .package(url: "https://github.com/yangliu-1995/TeakTextView.git", branch: "main")
 ```
 
-然后将 `TeakTextView` 产品加入 App target；直接使用语言规则和文档快照时，同时添加 `TeakTextCore` 产品。
+Add the `TeakTextView` product to your app target. Also add `TeakTextCore` if you use language rules or document snapshots directly.
 
-## 使用
+## Usage
 
-在 `MainActor` 中创建和操作编辑器，将它作为普通 `UIView` 加入界面：
+Create and operate the editor on `MainActor`, then add it to your interface as a regular `UIView`:
 
 ```swift
 import UIKit
@@ -64,11 +64,11 @@ func makeEditor(fileURL: URL) async throws -> TeakTextView {
 }
 ```
 
-常用操作：
+Common operations:
 
 ```swift
 try await editor.load(text: "const answer = 42;\n")
-editor.isEditable = false // 只读源码预览，仍可选择和复制
+editor.isEditable = false // Read-only source preview with selection and copying
 editor.isEditable = true
 
 try await editor.save(to: destinationURL)
@@ -81,9 +81,9 @@ let excerpt = try snapshot.text(
 )
 ```
 
-所有范围使用 UTF-16 坐标。大文档优先使用范围读取和 `save(to:)`，避免为显示少量内容而请求全文字符串。`snapshot` 共享不可变树，可安全交给后台任务。
+All ranges use UTF-16 coordinates. For large documents, prefer range reads and `save(to:)` over requesting the entire document as a string. A `snapshot` shares the immutable tree and can safely be passed to background tasks.
 
-语言规则可以从本地 JSON 动态加载：
+Load custom language rules from a local JSON file:
 
 ```swift
 let definition = try await registry.load(url: ruleURL)
@@ -92,23 +92,23 @@ editor.installPlugin(plugin)
 editor.removePlugin(id: plugin.id)
 ```
 
-`TeakLanguageRegistry.bundledLanguages()` 返回内置语言，`detect(fileName:firstLine:among:)` 支持文件名、最长后缀及已知解释器 shebang 检测。未识别的文件可按纯文本显示。
+`TeakLanguageRegistry.bundledLanguages()` returns the built-in languages. `detect(fileName:firstLine:among:)` detects languages using filenames, the longest matching suffix, and known interpreter shebangs. Unrecognized files can be displayed as plain text.
 
-## 支持语言
+## Supported Languages
 
-JavaScript / TypeScript、Python、HTML / CSS / Markdown、Java / C#、C / C++、Go、Rust、Swift、Kotlin、SQL、Bash、JSON、YAML、TOML。
+JavaScript / TypeScript, Python, HTML / CSS / Markdown, Java / C#, C / C++, Go, Rust, Swift, Kotlin, SQL, Bash, JSON, YAML, and TOML.
 
-规则位于 [`Sources/TeakTextCore/Languages`](Sources/TeakTextCore/Languages)，提供关键词、注释、字符串、数字和部分上下文着色。它们是有限词法规则：尚不支持完整语义分析、HTML 内嵌语言、Markdown 围栏内语言、JS 模板插值/正则字面量、Bash heredoc 或 SQL dollar quoting。自定义规则格式可参考 [`Examples/python.json`](Examples/python.json)。
+Rules in [`Sources/TeakTextCore/Languages`](Sources/TeakTextCore/Languages) provide highlighting for keywords, comments, strings, numbers, and selected contextual patterns. These are finite lexical rules: full semantic analysis, embedded languages in HTML and Markdown fences, JavaScript template interpolation and regex literals, Bash heredocs, and SQL dollar quoting are not yet supported. See [`Examples/python.json`](Examples/python.json) for a custom rule example.
 
 ## Demo
 
-打开 [`Demo/TeakTextViewDemo.xcodeproj`](Demo/TeakTextViewDemo.xcodeproj)，选择 **TeakTextViewDemo**，在 iPhone 或 arm64 模拟器运行。真机运行需在 Signing 中选择自己的 Team。
+Open [`Demo/TeakTextViewDemo.xcodeproj`](Demo/TeakTextViewDemo.xcodeproj), select **TeakTextViewDemo**, and run on an iPhone or arm64 simulator. To run on a physical device, select your own Team in Signing settings.
 
-启动页列出 19 种语言，进入后默认打开正常文件，右上角 **Demo files** 可切换大文件。共 38 份真实开源项目文件，保留原始内容、文件名及后缀；最大样本为 TypeScript 的 `checker.ts`（约 3.1 MB）。编辑使用临时副本，不修改打包资源。菜单还支持手动选择语言、导入文件与规则、保存、导出及查看开源声明。
+The launch screen lists 19 languages. Opening a language loads its normal sample; use **Demo files** in the top-right menu to switch to the large sample. The demo includes 38 real files from open-source projects, preserving their original contents, filenames, and extensions. The largest is TypeScript's `checker.ts` at approximately 3.1 MB. Editing uses temporary copies and leaves bundled resources intact. The menu also supports manual language selection, file and rule import, saving, export, and third-party notices.
 
-全部来源、固定提交、大小、SHA-256 和许可证见 [`Demo/Samples/SOURCES.md`](Demo/Samples/SOURCES.md) 与 [`catalog.json`](Demo/Samples/catalog.json)。这些文件仅作为展示资源，不编译或执行。
+See [`Demo/Samples/SOURCES.md`](Demo/Samples/SOURCES.md) and [`catalog.json`](Demo/Samples/catalog.json) for upstream sources, pinned commits, sizes, SHA-256 hashes, and licenses. These files are display resources and are never compiled or executed.
 
-命令行编译 arm64 模拟器 Demo：
+Build the demo for an arm64 simulator from the command line:
 
 ```sh
 xcodebuild -project Demo/TeakTextViewDemo.xcodeproj \
@@ -117,27 +117,27 @@ xcodebuild -project Demo/TeakTextViewDemo.xcodeproj \
   ONLY_ACTIVE_ARCH=YES ARCHS=arm64 CODE_SIGNING_ALLOWED=NO build
 ```
 
-在 macOS 上验证文档缓冲、编码往返及高亮核心：
+On macOS, validate the text buffer, encoding round trips, and highlighting core:
 
 ```sh
 swift test
 ```
 
-## 架构与边界
+## Architecture and Limitations
 
-| 模块 | 职责 |
+| Module | Responsibility |
 | --- | --- |
-| `TeakTextBuffer` | C++20 Rope、快照与换行索引 |
-| `TeakTextCore` | 文件 I/O、语言规则、后台高亮插件及缓存 |
-| `TeakTextStorage` | Foundation / TextKit 2 存储与有界布局元素 |
-| `TeakTextView` | UIKit 输入、行号、视口绘制及选区几何 |
+| `TeakTextBuffer` | C++20 Rope, snapshots, and newline indexes |
+| `TeakTextCore` | File I/O, language rules, background highlighting plugins, and caches |
+| `TeakTextStorage` | Foundation / TextKit 2 storage and bounded layout elements |
+| `TeakTextView` | UIKit input, line numbers, viewport rendering, and selection geometry |
 
-超长行按组合字符边界拆分内部布局元素，可能改变少量自动折行位置；原文、逻辑行号、复制和保存内容保持一致。打开文件仍会解码全文并常驻 UTF-16 文档，不是按需加载的磁盘编辑器。数百 MB 文件及百万行文件尚未建立真机性能指标。
+Very long lines are split into internal layout elements at composed character boundaries. This can slightly change wrapping positions; source text, logical line numbers, copied text, and saved contents remain unchanged. Opening a file still decodes the entire document into resident UTF-16 storage. This is not a disk-backed editor with on-demand loading. On-device performance benchmarks for files of hundreds of megabytes or millions of lines have not yet been established.
 
-大选区使用视口内几何减少全文排版。`TeakTextTouchSupport` 中集中封装了带签名校验的私有 UIKit 可选能力探测；系统版本变化时需要验证触摸选择行为。单元测试覆盖核心数据正确性，实际滚动、输入法、选区与编辑菜单性能需要在目标真机验证。
+Large selections use viewport-local geometry to reduce full-document layout. `TeakTextTouchSupport` centralizes signature-checked probes for an optional private UIKit capability; touch selection behavior needs validation as system versions change. Unit tests cover core data correctness. Scrolling, IME input, selection, and editing menu performance require validation on target devices.
 
-更多实现细节见 [`docs/Architecture.md`](docs/Architecture.md)。
+See the [architecture notes (Chinese)](docs/Architecture.md) for implementation details.
 
-## 许可证
+## License
 
-TeakTextView 使用 [MIT 许可证](LICENSE)。Demo 和测试中的第三方样本归各原作者所有，适用其随附许可证，详见 [第三方声明](THIRD_PARTY_NOTICES.md)。
+TeakTextView is released under the [MIT License](LICENSE). Third-party demo and test samples belong to their respective authors and retain their bundled licenses. See [third-party notices (Chinese)](THIRD_PARTY_NOTICES.md).
